@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Pokedex</string>
+    <string name="btnTxt_loadScreen">Start App</string>
+</resources>
