@@ -21,6 +21,16 @@ android {
         }
     }
 
+    applicationVariants.all { variant ->
+        // Customize the APK name based on your requirements
+        def customApkName = "Pokedex_0_0_1.apk"
+
+        // Configure the APK name for the variant
+        variant.outputs.all {
+            outputFileName = customApkName
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
