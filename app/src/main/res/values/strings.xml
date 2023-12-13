@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Pokedex</string>
     <string name="btnTxt_loadScreen">Start App</string>
+    <string name="rvTxt_pokemonnamedummy">Pokemon_Name</string>
 </resources>

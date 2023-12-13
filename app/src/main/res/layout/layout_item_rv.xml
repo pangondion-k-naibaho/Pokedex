@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginVertical="10dp"
+    android:paddingHorizontal="5dp"
+    android:background="@drawable/bg_square_rounded_blue">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivPokemon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars"/>
+
+    <TextView
+        android:id="@+id/tvPokemonName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/ivPokemon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/pokemon_generation_1_regular"
+        android:textSize="16sp"
+        android:textColor="@color/digital"
+        android:text="@string/rvTxt_pokemonnamedummy"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

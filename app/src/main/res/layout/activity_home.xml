@@ -6,4 +6,37 @@
     android:layout_height="match_parent"
     tools:context=".view.activity.home.HomeActivity">
 
+    <com.pokedex.client.view.custom_ui.InputSearchView
+        android:id="@+id/isvHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="5dp"
+        tools:ignore="MissingConstraints"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvListPokemon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/isvHome"
+        app:layout_constraintEnd_toEndOf="@+id/isvHome"
+        app:layout_constraintTop_toBottomOf="@+id/isvHome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/layout_item_rv"
+        android:overScrollMode="ifContentScrolls"/>
+
+    <ProgressBar
+        android:id="@+id/pbListPokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:indeterminateTint="@color/ocean_boat_blue"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
