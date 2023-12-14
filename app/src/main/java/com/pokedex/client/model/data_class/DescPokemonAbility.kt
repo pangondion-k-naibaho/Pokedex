@@ -4,7 +4,8 @@ import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-data class PokemonResponse(
-    var name: String?= null,
-    var url: String?= null
+data class DescPokemonAbility(
+    var ability: PokemonAbility?= null,
+    var is_hidden: Boolean = false,
+    var slot: Int?= null
 ):Parcelable

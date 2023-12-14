@@ -4,7 +4,7 @@ import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-data class PokemonResponse(
+class PokemonType(
     var name: String?= null,
-    var url: String?= null
+    var url: String?= null,
 ):Parcelable

@@ -27,135 +27,162 @@
         <item name="android:statusBarColor" tools:targetApi="P">?attr/colorPrimaryVariant</item>
     </style>
 
-    <style name="TextView"/>
+    <style name="TextView" />
 
-        <style name="TextView.Regular"/>
+    <style name="TextView.Regular" />
 
-            <style name="TextView.Regular.White10sp">
-                <item name="fontFamily">@font/pokemon_generation_1_regular</item>
-                <item name="android:textColor">@color/white</item>
-                <item name="android:textSize">10sp</item>
-            </style>
-            <style name="TextView.Regular.White12sp">
-                <item name="fontFamily">@font/pokemon_generation_1_regular</item>
-                <item name="android:textColor">@color/white</item>
-                <item name="android:textSize">12sp</item>
-            </style>
-            <style name="TextView.Regular.White14sp">
-                <item name="fontFamily">@font/pokemon_generation_1_regular</item>
-                <item name="android:textColor">@color/white</item>
-                <item name="android:textSize">14sp</item>
-            </style>
-            <style name="TextView.Regular.White16sp">
-                <item name="fontFamily">@font/pokemon_generation_1_regular</item>
-                <item name="android:textColor">@color/white</item>
-                <item name="android:textSize">16sp</item>
-            </style>
-            <style name="TextView.Regular.Black10sp">
-                <item name="fontFamily">@font/pokemon_generation_1_regular</item>
-                <item name="android:textColor">@color/black</item>
-                <item name="android:textSize">10sp</item>
-            </style>
-            <style name="TextView.Regular.Black12sp">
-                <item name="fontFamily">@font/pokemon_generation_1_regular</item>
-                <item name="android:textColor">@color/black</item>
-                <item name="android:textSize">12sp</item>
-            </style>
-            <style name="TextView.Regular.Black14sp">
-                <item name="fontFamily">@font/pokemon_generation_1_regular</item>
-                <item name="android:textColor">@color/black</item>
-                <item name="android:textSize">14sp</item>
-            </style>
-            <style name="TextView.Regular.Black16sp">
-                <item name="fontFamily">@font/pokemon_generation_1_regular</item>
-                <item name="android:textColor">@color/black</item>
-                <item name="android:textSize">16sp</item>
-            </style>
-            <style name="TextView.Regular.Digital10sp">
-                <item name="fontFamily">@font/pokemon_generation_1_regular</item>
-                <item name="android:textColor">@color/digital</item>
-                <item name="android:textSize">10sp</item>
-            </style>
-            <style name="TextView.Regular.Digital12sp">
-                <item name="fontFamily">@font/pokemon_generation_1_regular</item>
-                <item name="android:textColor">@color/digital</item>
-                <item name="android:textSize">12sp</item>
-            </style>
-            <style name="TextView.Regular.Digital14sp">
-                <item name="fontFamily">@font/pokemon_generation_1_regular</item>
-                <item name="android:textColor">@color/digital</item>
-                <item name="android:textSize">14sp</item>
-            </style>
-            <style name="TextView.Regular.Digital16sp">
-                <item name="fontFamily">@font/pokemon_generation_1_regular</item>
-                <item name="android:textColor">@color/digital</item>
-                <item name="android:textSize">16sp</item>
-            </style>
+    <style name="TextView.Regular.White10sp">
+        <item name="fontFamily">@font/pokemon_generation_1_regular</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="TextView.Regular.White12sp">
+        <item name="fontFamily">@font/pokemon_generation_1_regular</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextView.Regular.White14sp">
+        <item name="fontFamily">@font/pokemon_generation_1_regular</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextView.Regular.White16sp">
+        <item name="fontFamily">@font/pokemon_generation_1_regular</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextView.Regular.Black10sp">
+        <item name="fontFamily">@font/pokemon_generation_1_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="TextView.Regular.Black12sp">
+        <item name="fontFamily">@font/pokemon_generation_1_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextView.Regular.Black14sp">
+        <item name="fontFamily">@font/pokemon_generation_1_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextView.Regular.Black16sp">
+        <item name="fontFamily">@font/pokemon_generation_1_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextView.Regular.Digital10sp">
+        <item name="fontFamily">@font/pokemon_generation_1_regular</item>
+        <item name="android:textColor">@color/digital</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="TextView.Regular.Digital12sp">
+        <item name="fontFamily">@font/pokemon_generation_1_regular</item>
+        <item name="android:textColor">@color/digital</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextView.Regular.Digital14sp">
+        <item name="fontFamily">@font/pokemon_generation_1_regular</item>
+        <item name="android:textColor">@color/digital</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextView.Regular.Digital16sp">
+        <item name="fontFamily">@font/pokemon_generation_1_regular</item>
+        <item name="android:textColor">@color/digital</item>
+        <item name="android:textSize">16sp</item>
+    </style>
 
 
-    <style name="Button"/>
+    <style name="Button" />
 
-    <style name="Button.Regular"/>
+    <style name="Button.Regular" />
 
-        <style name="Button.Regular.White10sp">
-            <item name="fontFamily">@font/pokemon_generation_1_regular</item>
-            <item name="android:textColor">@color/white</item>
-            <item name="android:textSize">10sp</item>
-        </style>
-        <style name="Button.Regular.White12sp">
-            <item name="fontFamily">@font/pokemon_generation_1_regular</item>
-            <item name="android:textColor">@color/white</item>
-            <item name="android:textSize">12sp</item>
-        </style>
-        <style name="Button.Regular.White14sp">
-            <item name="fontFamily">@font/pokemon_generation_1_regular</item>
-            <item name="android:textColor">@color/white</item>
-            <item name="android:textSize">14sp</item>
-        </style>
-        <style name="Button.Regular.White16sp">
-            <item name="fontFamily">@font/pokemon_generation_1_regular</item>
-            <item name="android:textColor">@color/white</item>
-            <item name="android:textSize">16sp</item>
-        </style>
-        <style name="Button.Regular.Black10sp">
-            <item name="fontFamily">@font/pokemon_generation_1_regular</item>
-            <item name="android:textColor">@color/black</item>
-            <item name="android:textSize">10sp</item>
-        </style>
-        <style name="Button.Regular.Black12sp">
-            <item name="fontFamily">@font/pokemon_generation_1_regular</item>
-            <item name="android:textColor">@color/black</item>
-            <item name="android:textSize">12sp</item>
-        </style>
-        <style name="Button.Regular.Black14sp">
-            <item name="fontFamily">@font/pokemon_generation_1_regular</item>
-            <item name="android:textColor">@color/black</item>
-            <item name="android:textSize">14sp</item>
-        </style>
-        <style name="Button.Regular.Black16sp">
-            <item name="fontFamily">@font/pokemon_generation_1_regular</item>
-            <item name="android:textColor">@color/black</item>
-            <item name="android:textSize">16sp</item>
-        </style>
-        <style name="Button.Regular.Digital10sp">
-            <item name="fontFamily">@font/pokemon_generation_1_regular</item>
-            <item name="android:textColor">@color/digital</item>
-            <item name="android:textSize">10sp</item>
-        </style>
-        <style name="Button.Regular.Digital12sp">
-            <item name="fontFamily">@font/pokemon_generation_1_regular</item>
-            <item name="android:textColor">@color/digital</item>
-            <item name="android:textSize">12sp</item>
-        </style>
-        <style name="Button.Regular.Digital14sp">
-            <item name="fontFamily">@font/pokemon_generation_1_regular</item>
-            <item name="android:textColor">@color/digital</item>
-            <item name="android:textSize">14sp</item>
-        </style>
-        <style name="Button.Regular.Digital16sp">
-            <item name="fontFamily">@font/pokemon_generation_1_regular</item>
-            <item name="android:textColor">@color/digital</item>
-            <item name="android:textSize">16sp</item>
-        </style>
+    <style name="Button.Regular.White10sp">
+        <item name="fontFamily">@font/pokemon_generation_1_regular</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="Button.Regular.White12sp">
+        <item name="fontFamily">@font/pokemon_generation_1_regular</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Button.Regular.White14sp">
+        <item name="fontFamily">@font/pokemon_generation_1_regular</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Button.Regular.White16sp">
+        <item name="fontFamily">@font/pokemon_generation_1_regular</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Button.Regular.Black10sp">
+        <item name="fontFamily">@font/pokemon_generation_1_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="Button.Regular.Black12sp">
+        <item name="fontFamily">@font/pokemon_generation_1_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Button.Regular.Black14sp">
+        <item name="fontFamily">@font/pokemon_generation_1_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Button.Regular.Black16sp">
+        <item name="fontFamily">@font/pokemon_generation_1_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Button.Regular.Digital10sp">
+        <item name="fontFamily">@font/pokemon_generation_1_regular</item>
+        <item name="android:textColor">@color/digital</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="Button.Regular.Digital12sp">
+        <item name="fontFamily">@font/pokemon_generation_1_regular</item>
+        <item name="android:textColor">@color/digital</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Button.Regular.Digital14sp">
+        <item name="fontFamily">@font/pokemon_generation_1_regular</item>
+        <item name="android:textColor">@color/digital</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Button.Regular.Digital16sp">
+        <item name="fontFamily">@font/pokemon_generation_1_regular</item>
+        <item name="android:textColor">@color/digital</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Pokedex" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
 
 </resources>

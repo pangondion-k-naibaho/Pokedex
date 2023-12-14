@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.pokedex.client.databinding.ActivityHomeBinding
 import com.pokedex.client.model.data_class.ListPokemonResponse
 import com.pokedex.client.model.data_class.PokemonResponse
+import com.pokedex.client.view.activity.detail.DetailActivity
 import com.pokedex.client.view.adapter.ListPokemonAdapter
 import com.pokedex.client.viewmodel.home.HomeViewModel
 
@@ -63,7 +64,9 @@ class HomeActivity : AppCompatActivity() {
         binding.rvListPokemon.apply {
             val pokemonAdapter = ListPokemonAdapter(listPokemon.results!!, object: ListPokemonAdapter.ItemListener{
                 override fun onItemClicked(item: PokemonResponse) {
-                    Toast.makeText(this@HomeActivity, "Item Clicked", Toast.LENGTH_SHORT).show()
+                    startActivity(
+                        DetailActivity.newIntent(this@HomeActivity, item)
+                    )
                 }
             })
             setHasFixedSize(true)
