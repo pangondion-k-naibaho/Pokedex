@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.pokedex.client.R
 import com.pokedex.client.databinding.ActivityDetailBinding
+import com.pokedex.client.model.Extensions.FUNCTIONS.Companion.retrieveNumberFromUrl
 import com.pokedex.client.model.data_class.PokemonDetailInfo
 import com.pokedex.client.model.data_class.PokemonResponse
 import com.pokedex.client.view.adapter.ListPokemonAbilityAdapter
@@ -72,13 +73,5 @@ class DetailActivity : AppCompatActivity() {
             layoutManager = LinearLayoutManager(this@DetailActivity)
             adapter = ListPokemonAbilityAdapter(pokemonDetailInfo.abilities!!)
         }
-    }
-
-    private fun retrieveNumberFromUrl(url: String): String {
-        // Remove the base URL
-        val suffix = url.removePrefix("https://pokeapi.co/api/v2/pokemon/")
-
-        // Remove the trailing "/"
-        return suffix.removeSuffix("/")
     }
 }

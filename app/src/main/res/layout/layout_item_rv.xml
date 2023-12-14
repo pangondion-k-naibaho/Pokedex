@@ -14,7 +14,7 @@
         android:layout_height="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@tools:sample/avatars"/>
+        tools:src="@drawable/pokeball"/>
 
     <TextView
         android:id="@+id/tvPokemonName"

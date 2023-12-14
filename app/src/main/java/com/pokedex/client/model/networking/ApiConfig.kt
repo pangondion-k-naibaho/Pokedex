@@ -1,6 +1,6 @@
 package com.pokedex.client.model.networking
 
-import com.pokedex.client.model.Constants.URL.Companion.BASE_URL
+import com.pokedex.client.model.Extensions.CONSTANTS.Companion.BASE_URL
 import de.hdodenhof.circleimageview.BuildConfig
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

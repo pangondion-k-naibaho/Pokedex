@@ -11,6 +11,7 @@ import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.pokedex.client.databinding.ActivityHomeBinding
 import com.pokedex.client.model.data_class.ListPokemonResponse
 import com.pokedex.client.model.data_class.PokemonResponse
@@ -60,18 +61,39 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun setDataPokemon(listPokemon: ListPokemonResponse){
+        val myLayoutManager = LinearLayoutManager(this@HomeActivity)
         Log.d(TAG, "listPokemon: $listPokemon")
         binding.rvListPokemon.apply {
-            val pokemonAdapter = ListPokemonAdapter(listPokemon.results!!, object: ListPokemonAdapter.ItemListener{
+            val pokemonAdapter = ListPokemonAdapter(listPokemon.results!!.toMutableList(), object: ListPokemonAdapter.ItemListener{
                 override fun onItemClicked(item: PokemonResponse) {
                     startActivity(
                         DetailActivity.newIntent(this@HomeActivity, item)
                     )
                 }
             })
-            setHasFixedSize(true)
-            layoutManager = LinearLayoutManager(this@HomeActivity)
+            layoutManager = myLayoutManager
             adapter = pokemonAdapter
+            addOnScrollListener(object: RecyclerView.OnScrollListener(){
+                override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+                    super.onScrolled(recyclerView, dx, dy)
+
+                    val visibleItemCount = myLayoutManager.childCount
+                    val totalItemCount = myLayoutManager.itemCount
+                    val firstVisibleItemPosition = myLayoutManager.findFirstVisibleItemPosition()
+
+                    if ((visibleItemCount + firstVisibleItemPosition) >= totalItemCount
+                        && firstVisibleItemPosition >= 0
+                        && totalItemCount >= 10 // Your threshold value
+                    ) {
+                        offset = offset?.plus(10)
+                        homeViewModel.getMoreListPokemon(offset!!)
+                        homeViewModel.listPokemonResponse2.observe(this@HomeActivity, {listPokemonResponse2->
+                            pokemonAdapter.addItem(listPokemonResponse2.results!!)
+                        })
+                    }
+
+                }
+            })
         }
     }
 

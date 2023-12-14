@@ -15,6 +15,9 @@ class HomeViewModel:ViewModel() {
     private var _listPokemonResponse = MutableLiveData<ListPokemonResponse>()
     val listPokemonResponse : LiveData<ListPokemonResponse> = _listPokemonResponse
 
+    private var _listPokemonResponse2 = MutableLiveData<ListPokemonResponse>()
+    val listPokemonResponse2 : LiveData<ListPokemonResponse> = _listPokemonResponse2
+
     private var _isLoading = MutableLiveData<Boolean>()
     val isLoading : LiveData<Boolean> = _isLoading
 
@@ -32,6 +35,32 @@ class HomeViewModel:ViewModel() {
                 _isLoading.value = false
                 if(response.isSuccessful){
                     _listPokemonResponse.value = response.body()
+                    Log.d(TAG, "Successs")
+                }else{
+                    _isFail.value = true
+                    Log.e(TAG, "onFailure: ${response.message()}")
+                }
+            }
+
+            override fun onFailure(call: Call<ListPokemonResponse>, t: Throwable) {
+                _isLoading.value = false
+                _isFail.value = true
+                Log.e(TAG, "onFailure: ${t.message.toString()}")
+            }
+
+        })
+    }
+    fun getMoreListPokemon(offset: Int){
+        _isLoading.value = true
+        val client1 = ApiConfig.getApiService().getListPokemon(offset = offset)
+        client1.enqueue(object: retrofit2.Callback<ListPokemonResponse>{
+            override fun onResponse(
+                call: Call<ListPokemonResponse>,
+                response: Response<ListPokemonResponse>
+            ) {
+                _isLoading.value = false
+                if(response.isSuccessful){
+                    _listPokemonResponse2.value = response.body()
                     Log.d(TAG, "Successs")
                 }else{
                     _isFail.value = true

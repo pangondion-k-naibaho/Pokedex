@@ -27,7 +27,7 @@
         app:layout_constraintTop_toBottomOf="@+id/isvHome"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:listitem="@layout/layout_item_rv"
-        android:overScrollMode="ifContentScrolls"/>
+        android:overScrollMode="always"/>
 
     <ProgressBar
         android:id="@+id/pbListPokemon"
